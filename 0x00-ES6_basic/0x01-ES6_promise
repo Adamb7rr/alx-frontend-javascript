@@ -11,7 +11,7 @@ then
 fi
 
 # Add the specified file
-git add *
+git add $FILE
 
 # Get the base filename without the path
 BASENAME=$(basename $FILE)
