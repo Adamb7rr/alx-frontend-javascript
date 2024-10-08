@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable */
-
 import Car from './10-car';
 
 export default class EVCar extends Car {
@@ -9,8 +7,8 @@ export default class EVCar extends Car {
     this._range = range;
   }
 
+/* Graham S. Paul  - 100-evcar.js */
   cloneCar() {
-    const Spec = super.constructor[Symbol.species];
-    return new Spec();
+    return new Car();
   }
 }
